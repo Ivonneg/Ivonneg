@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/ig/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ig/" rel="alternate" type="text/html" /><updated>2019-01-03T06:55:53+00:00</updated><id>http://localhost:4000/ig/</id><title type="html">ivonneg</title><subtitle>User Experience Designer</subtitle><author><name>ivonng</name></author><entry><title type="html">EventHub</title><link href="http://localhost:4000/ig/2018/04/17/eventhub.html" rel="alternate" type="text/html" title="EventHub" /><published>2018-04-17T00:00:00+00:00</published><updated>2018-04-17T00:00:00+00:00</updated><id>http://localhost:4000/ig/2018/04/17/eventhub</id><content type="html" xml:base="http://localhost:4000/ig/2018/04/17/eventhub.html">&lt;h2 class=&quot;section-heading&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/ig/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ig/" rel="alternate" type="text/html" /><updated>2019-02-05T17:22:36+00:00</updated><id>http://localhost:4000/ig/</id><title type="html">ivonneg</title><subtitle>User Experience Designer</subtitle><author><name>ivonng</name></author><entry><title type="html">EventHub</title><link href="http://localhost:4000/ig/2018/04/17/eventhub.html" rel="alternate" type="text/html" title="EventHub" /><published>2018-04-17T00:00:00+00:00</published><updated>2018-04-17T00:00:00+00:00</updated><id>http://localhost:4000/ig/2018/04/17/eventhub</id><content type="html" xml:base="http://localhost:4000/ig/2018/04/17/eventhub.html">&lt;h2 class=&quot;section-heading&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;In a city that is oversaturated with weekend events and festivals, Chicagoans need a succinct and efficient
 way to access a database of information regarding these specific events. Users want to know more than just
@@ -10,6 +10,7 @@ limited to: cost of event / vendor costs, accessibility by public transportation
 (or under-crowding). EventHub addresses these grievances by offering site-specific information about a
 given festival on an easily navigated platform allowing the user to quickly decide whether this is an
 event they would like to attend or not.&lt;/p&gt;
+
 &lt;h2 class=&quot;section-heading&quot;&gt;Overview and Features&lt;/h2&gt;
 
 &lt;p&gt;The design goals that paved the way for most of the decisions we made were primarily based on ease of use and accessibility of specific information.
@@ -78,7 +79,7 @@ event they would like to attend or not.&lt;/p&gt;
 
 &lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;img/posts/ChicagoRuby New IA.pdf&quot; alt=&quot;Info Archit&quot;&gt;
+![Information Architecture](post-two.jpg)
 &lt;span class=&quot;caption text-muted&quot;&gt;Information Architecture&lt;/span&gt;
 
 &lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
