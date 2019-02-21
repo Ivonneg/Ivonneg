@@ -1,142 +1,108 @@
-# [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) - Official Jekyll Version
+# al-folio
 
-[Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working contact form powered by [Formspree](https://formspree.io/).
+[![build status](https://travis-ci.org/alshedivat/al-folio.svg?branch=master)](https://travis-ci.org/alshedivat/al-folio)
+[![demo](https://img.shields.io/badge/theme-demo-brightgreen.svg)](https://alshedivat.github.io/al-folio/)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/alshedivat/al-folio/blob/master/LICENSE)
+[![gitter](https://badges.gitter.im/alshedivat/al-folio.svg)](https://gitter.im/alshedivat/al-folio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This repository holds the official Jekyll version of the Clean Blog!
+A simple and clean [Jekyll](https://jekyllrb.com/) theme for academics.
 
-## Preview
+[![Screenshot](assets/img/full-screenshot.png)](https://alshedivat.github.io/al-folio/)
 
-[![Clean Blog (Jekyll) Preview](https://startbootstrap.com/assets/img/templates/clean-blog.jpg)](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)
+Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](http://liabogoev.com) and under the MIT license).
+Since then, it got a full re-write of the styles and many additional cool features.
+The emphasis is on whitespace, transparency, and academic usage: [theme demo](https://alshedivat.github.io/al-folio/).
 
-**[View Live Preview](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)**
+## Getting started
 
-## Installation & Setup
+For more about how to use Jekyll, check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
+Why Jekyll? Read this [blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)!
 
-### Using RubyGems:
+### Installation
 
-When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), first fork the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
 
-1. (Optional) Create a new Jekyll site: `jekyll new my-site`
-2. Replace the current theme in your `Gemfile` with `gem "jekyll-theme-clean-blog"`.
-3. Install the theme: `bundle install`
-4. Replace the current theme in your `_config.yml` file with `theme: jekyll-theme-awesome`.
-5. Build your site: `bundle exec jekyll serve`
-
-Assuming there are no errors and the site is building properly, follow these steps next:
-
-1. Create the following pages if they do not exist already (or change the extension of exsiting markdown files from `.md` to `.html`):
-   - `index.html` - set to `layout: home`
-   - `about.html` - set to `layout: page`
-   - `contact.html` - set to `layout: page`
-   - `posts/index.html` - set to `layout: page` (you will also need to create a `posts` directory)
-2. Configure the `index.html` front matter. Example:
-```
----
-layout: home
-background: '/PATH_TO_IMAGE'
----
-```
-3. Configure the `about.html`, `contact.html`, and `posts/index.html` front matter. Example:
-```
----
-layout: page
-title: Page Title
-description: This is the page description.
-background: '/PATH_TO_IMAGE'
----
-```
-4. For each post in the `_posts` directory, update the front matter. Example:
-```
----
-layout: post
-title: "Post Title"
-subtitle: "This is the post subtitle."
-date: YYYY-MM-DD HH:MM:SS
-background: '/PATH_TO_IMAGE'
----
+```bash
+$ git clone git@github.com:<your-username>/<your-repo-name>.git
+$ cd <your-repo-name>
+$ bundle install
+$ bundle exec jekyll serve
 ```
 
-For reference, look at the [demo repository](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll) to see how the files are set up.
+Now, feel free to customize the theme however you like (don't forget to change the name!).
+After you are done, **commit** your final changes.
+Now, you can deploy your website to [GitHub Pages](https://pages.github.com/) by running the deploy script:
 
-5. Add the form to the `contact.html` page. Add the following code to your `contact.html` page:
+```bash
+$ ./bin/deploy [--user]
 ```
-<form name="sentMessage" id="contactForm" novalidate>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Name</label>
-      <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Email Address</label>
-      <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-      <label>Phone Number</label>
-      <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Message</label>
-      <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <br>
-  <div id="success"></div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-  </div>
-</form>
+By default, the script uses the `master` branch for the source code and deploys the webpage to `gh-pages`.
+The optional flag `--user` tells it to deploy to `master` and use `source` for the source code instead.
+Using `master` for deployment is a convention for [user and organization pages](https://help.github.com/articles/user-organization-and-project-pages/).
+
+**Note:** when deploying your user or organization page, make sure the `_config.yml` has `url` and `baseurl` fields as follows.
+
+```
+url: # should be empty
+baseurl:  # should be empty
 ```
 
-Make sure you have the `email` setting in your `_config.yml` file set to a working email address! Once this is set, fill out the form and then check your email, verify the email address using the link sent to you by Formspree, and then the form will be working!
+### Usage
 
-6. Build your site: `bundle exec jekyll serve`
+Note that `_pages/about.md` is built to index.html in the published site. There is therefore no need to have a separate index page for the project. If an index page does exist in the root directory then this will prevent `_pages/about.md` from being added to the built site.
 
-### Using Core Files
+## Features
 
-When using the core files, the demo images, posts, and pages are all included with the download. After following the instructions below, you can then go and change the content of the pages and posts.
+#### Ergonomic Publications
 
-1. [Download](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/archive/master.zip) or Clone the repository.
-2. Update the following configuration settings in your `_config.yml` file:
-   - `baserul`
-   - `url`
-   - `title`
-   - `email` (after setting this setting to a working email address, fill out the form on the contact page and send it - then check your email and verify the address and the form will send you messages when used)
-   - `description`
-   - `author`
-   - `twitter_username` (Optional)
-   - `facebook_username` (Optional)
-   - `github_username` (Optional)
-3. Build your site: `bundle exec jekyll serve`
+Your publications page is generated automatically from your BibTex bibliography.
+Simply edit `_bibliography/papers.bib`.
+You can also add new `*.bib` files and customize the look of your publications however you like by editing `_pages/publications.md`.
 
-## Bugs and Issues
+Keep meta-information about your co-authors in `_data/coauthors.yml` and Jekyll will insert links to their webpages automatically.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/issues) here on GitHub!
+#### Collections
+This Jekyll theme implements collections to let you break up your work into categories.
+The example is divided into news and projects, but easily revamp this into apps, short stories, courses, or whatever your creative work is.
 
-## About
+> To do this, edit the collections in the `_config.yml` file, create a corresponding folder, and create a landing page for your collection, similar to `_pages/projects.md`.
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Two different layouts are included: the blog layout, for a list of detailed descriptive list of entries, and the projects layout.
+The projects layout overlays a descriptive hoverover on a background image.
+If no image is provided, the square is auto-filled with the chosen theme color.
+Thumbnail sizing is not necessary, as the grid crops images perfectly.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+#### Theming
+Six beautiful theme colors have been selected to choose from.
+The default is purple, but quickly change it by editing `$theme-color` variable in the `_sass/variables.scss` file (line 72).
+Other color variables are listed there, as well.
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+#### Photos
+Photo formatting is made simple using rows of a 3-column system.
+Make photos 1/3, 2/3, or full width.
+Easily create beautiful grids within your blog posts and projects pages:
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/projects/1_project/">
+    <img src="assets/img/photos-screenshot.png" width="75%">
+  </a>
+</p>
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+#### Code Highlighting
+This theme implements Jekyll's built in code syntax highlighting with Pygments.
+Just use the liquid tags `{% highlight python %}` and `{% endhighlight %}` to delineate your code:
 
-## Copyright and License
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/blog/2015/code/">
+    <img src="assets/img/code-screenshot.png" width="75%">
+  </a>
+</p>
 
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/blob/gh-pages/LICENSE) license.
+## Contributing
+
+Feel free to contribute new features and theme improvements by sending a pull request.
+Style improvements and bug fixes are especially welcome.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

@@ -1,34 +1,23 @@
 ---
 layout: default
 ---
+<div class="post">
 
-<!-- Page Header -->
-{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-{% else %}
-<header class="masthead">
-{% endif %}
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="page-heading">
-          <h1>{{ page.title }}</h1>
-          {% if page.description %}
-            <span class="subheading">{{ page.description }}</span>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h5 class="post-description">{{ page.description }}</h5>
+  </header>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
+  <article class="post-content {{page.title}} clearfix">
+    {{ content }}
+  </article>
 
-      {{ content }}
+  {% if page.news %}
+    {% include news.html %}
+  {% endif %}
 
-    </div>
-  </div>
+  {% if page.social %}
+    {% include social.html %}
+  {% endif %}
+
 </div>
